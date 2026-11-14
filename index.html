@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>학생회 1년 성찰</title>
+<meta name="theme-color" content="#FBF7EF">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="학생회 성찰">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<style>
+  html,body{margin:0;height:100%;background:#FBF7EF}
+  iframe{position:fixed;inset:0;width:100%;height:100%;border:0}
+</style>
+</head>
+<body>
+<!-- ▼▼▼ 아래 따옴표 안에 Apps Script 웹앱 주소(…/exec)를 붙여 넣으세요 ▼▼▼ -->
+<script>var APP_URL = "https://script.google.com/macros/s/AKfycbw104HemAvvLpN_gi5LgN7oyFSsi7-8JW2TsqTMF1x2MmZfXmd_LJCEbv_UMa5QQI-bcw/exec";</script>
+<!-- ▲▲▲ 여기만 바꾸면 돼요 ▲▲▲ -->
+<iframe id="app" allow="clipboard-write"></iframe>
+<script>
+  document.getElementById('app').src = APP_URL;
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+</script>
+</body>
+</html>
